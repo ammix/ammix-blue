@@ -23,6 +23,8 @@ modules:
       cleanup: true
       files:
         - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
+      copr:
+        - bieszczaders/kernel-cachyos-addons
     optfix:
       - vivaldi
     install:
