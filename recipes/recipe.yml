@@ -6,8 +6,8 @@ name: ammix-blue
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41 # latest is also supported if you want new updates ASAP
+base-image: quay.io/fedora-ostree-desktops/silverblue
+image-version: 42 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -17,27 +17,99 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+  - type: bling
     install:
-      - micro
-      - starship
+        - rpmfusion # install RPMFusion repos, including tainted repos & disable negativo17 repos if installed
+        - gnome-vrr # enables gnome-vrr for your image
+
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
+    optfix:
+      - vivaldi
+    install:
+      packages:
+        - neovim
+        - vivaldi-stable
+        - steam-devices
+        - usbutils
+        - jq
+        - podman-docker
+        - podman
+        - docker-compose
+        - heif-pixbuf-loader
+        - libheif
+        - mpv
+        - flatpak-spawn
+        - alsa-firmware
+        - ffmpegthumbnailer
+        - distrobox
+        - wireguard-tools
+        - openssl
+        - pam-u2f
+        - pamu2fcfg
+        - pam_yubico
+        - fido2-tools
+        - smartmontools
+        - wl-clipboard
+        - scx-scheds
+        - stow
+        - gamemode
+        - gum
+        - google-noto-fonts-all
+        - liberation-fonts-all
+        - wqy-zenhei-fonts
+        - nautilus-open-any-terminal
+        - nautilus-python
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      packages:
+        - firefox
+        - firefox-langpacks
 
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: true
         scope: system
-        # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
+      - scope: user
+        install:
           - org.gnome.Loupe
-      - scope: user # Also add Flathub user repo, but no user packages
+          - io.gitlab.librewolf-community
+          - app.zen_browser.zen
+          - com.discordapp.Discord
+          - com.heroicgameslauncher.hgl
+          - com.usebottles.bottles
+          - com.vysp3r.ProtonPlus
+          - md.obsidian.Obsidian
+          - com.valvesoftware.Steam
+          - com.github.tchx84.Flatseal
+          - org.musicbrainz.Picard
+          - io.bassi.Amberol
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Inter
+        - Victor Mono
 
+  - type: gnome-extensions
+    install:
+      - Blur my Shell
+      - GSConnect
+      - Fullscreen Avoider
+
+  - type: systemd
+    system:
+      enabled:
+        - scx_loader.service
+        - rpm-ostreed-automatic.timer
+
+  - type: initramfs
+
+  - type: signing
