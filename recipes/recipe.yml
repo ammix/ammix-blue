@@ -57,7 +57,6 @@ modules:
         - google-noto-fonts-all
         - liberation-fonts-all
         - wqy-zenhei-fonts
-        - nautilus-open-any-terminal
         - nautilus-python
     remove:
       packages:
