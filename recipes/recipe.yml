@@ -17,13 +17,9 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: bling
-    install:
-        - rpmfusion # install RPMFusion repos, including tainted repos & disable negativo17 repos if installed
-        - gnome-vrr # enables gnome-vrr for your image
-
   - type: dnf
     repos:
+      nonfree: rpmfusion
       cleanup: true
       files:
         - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
@@ -67,6 +63,15 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+    replace:
+    - from-repo: rpmfusion
+      packages:
+        - old: ffmpeg-free
+          new: ffmpeg
+        - old: mesa-vulkan
+          new: mesa-vulkan-freeworld
+        - old: mesa-va-drivers
+          new: mesa-va-drivers-freeworld
 
   - type: default-flatpaks
     configurations:
