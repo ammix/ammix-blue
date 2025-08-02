@@ -65,10 +65,6 @@ modules:
         - nautilus-python
         - papers
         - showtime
-        - gstreamer1-plugins-bad-freeworld
-        - gstreamer1-plugins-ugly
-        - gstreamer1-libav
-        - "lame*"
         - rpmfusion-nonfree-release-tainted
         - "*-firmware"
     group-install:
