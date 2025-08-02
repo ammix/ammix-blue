@@ -115,6 +115,7 @@ modules:
           - org.gnome.gitlab.YaLTeR.Identity
           - com.github.finefindus.eyedropper
           - io.github.fizzyizzy05.binary
+          - page.tesk.Refine
 
   - type: fonts
     fonts:
