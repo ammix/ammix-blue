@@ -103,6 +103,8 @@ modules:
       - amdgpu.ppfeaturemask=0xfffd7fff
 
   - type: script
+    snippets:
+      - "plymouth-set-default-theme catppuccin-mocha"
     scripts:
       - akmods.sh
 
