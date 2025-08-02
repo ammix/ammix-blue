@@ -68,7 +68,7 @@ modules:
         - showtime
         - xz-utils
         - VirtualBox
-        - emacs-pgtk
+        - emacs
         - rpmfusion-nonfree-release-tainted
         - "*-firmware"
         - akmods
@@ -103,7 +103,7 @@ modules:
 
   - type: script
     scripts:
-      - virtual.sh
+      - akmods.sh
 
   - type: default-flatpaks
     configurations:
