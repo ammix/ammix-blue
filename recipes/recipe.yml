@@ -49,24 +49,30 @@ modules:
         - pam-u2f
         - pamu2fcfg
         - pam_yubico
+        - yubikey-manager
+        - yubioath-desktop
+        - lact
         - fido2-tools
         - smartmontools
         - wl-clipboard
         - scx-scheds
         - stow
+        - just
         - gamemode
         - gum
         - google-noto-fonts-all
         - liberation-fonts-all
         - wqy-zenhei-fonts
         - nautilus-python
+        - papers
+        - showtime
     remove:
       packages:
         - firefox
         - firefox-langpacks
     replace:
     - from-repo: rpmfusion
-      allow-erasing = true
+      allow-erasing: true
       packages:
         - old: ffmpeg-free
           new: ffmpeg
@@ -81,7 +87,6 @@ modules:
         scope: system
       - scope: user
         install:
-          - org.gnome.Loupe
           - io.gitlab.librewolf-community
           - app.zen_browser.zen
           - com.discordapp.Discord
@@ -93,6 +98,18 @@ modules:
           - com.github.tchx84.Flatseal
           - org.musicbrainz.Picard
           - io.bassi.Amberol
+          - io.github.ilya_zlobintsev.LACT
+          - app.drey.EarTag
+          - de.schmidhuberj.DieBahn
+          - io.gitlab.adhami3310.Converter
+          - io.github.idevecore.Valuta
+          - com.github.ADBeveridge.Raider
+          - info.febvre.Komikku
+          - com.belmoussaoui.Decoder
+          - dev.geopjr.Collision
+          - org.gnome.gitlab.YaLTeR.Identity
+          - com.github.finefindus.eyedropper
+          - io.github.fizzyizzy05.binary
 
   - type: fonts
     fonts:
