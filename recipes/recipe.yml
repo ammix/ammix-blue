@@ -27,6 +27,7 @@ modules:
     optfix:
       - vivaldi
     install:
+      skip-unavailable: true
       packages:
         - neovim
         - zstd
@@ -66,10 +67,11 @@ modules:
         - papers
         - showtime
         - xz-utils
+        - VirtualBox
         - rpmfusion-nonfree-release-tainted
         - "*-firmware"
     group-install:
-      install-weak-deps: false
+      skip-unavailable: true
       packages:
         - multimedia
         - virtualization
