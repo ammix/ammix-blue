@@ -71,6 +71,12 @@ modules:
         - emacs-pgtk
         - rpmfusion-nonfree-release-tainted
         - "*-firmware"
+        - akmods
+        - kernel-devel
+        - kernel-headers
+        - gcc
+        - make
+        - elfutils-libelf-devel
     group-install:
       skip-unavailable: true
       packages:
@@ -94,6 +100,10 @@ modules:
   - type: kargs
     kargs:
       - amdgpu.ppfeaturemask=0xfffd7fff
+
+  - type: script
+    scripts:
+      - virtual.sh
 
   - type: default-flatpaks
     configurations:
