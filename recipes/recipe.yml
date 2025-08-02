@@ -68,6 +68,7 @@ modules:
         - showtime
         - xz-utils
         - VirtualBox
+        - emacs-pgtk
         - rpmfusion-nonfree-release-tainted
         - "*-firmware"
     group-install:
