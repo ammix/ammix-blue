@@ -66,6 +66,7 @@ modules:
         - firefox-langpacks
     replace:
     - from-repo: rpmfusion
+      allow-erasing: true
       packages:
         - old: ffmpeg-free
           new: ffmpeg
