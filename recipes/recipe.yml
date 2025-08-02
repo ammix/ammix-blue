@@ -65,12 +65,14 @@ modules:
         - nautilus-python
         - papers
         - showtime
+        - xz-utils
         - rpmfusion-nonfree-release-tainted
         - "*-firmware"
     group-install:
       install-weak-deps: false
       packages:
         - multimedia
+        - virtualization
     remove:
       packages:
         - firefox
@@ -100,6 +102,7 @@ modules:
           - app.zen_browser.zen
           - com.discordapp.Discord
           - com.heroicgameslauncher.hgl
+          - net.lutris.Lutris
           - com.usebottles.bottles
           - com.vysp3r.ProtonPlus
           - md.obsidian.Obsidian
@@ -143,6 +146,7 @@ modules:
       enabled:
         - scx_loader.service
         - rpm-ostreed-automatic.timer
+        - libvirtd.service
 
   - type: initramfs
 
