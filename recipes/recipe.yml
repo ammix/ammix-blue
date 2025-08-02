@@ -66,12 +66,12 @@ modules:
         - firefox-langpacks
     replace:
     - from-repo: rpmfusion
-      allow-erasing: true
+      allow-erasing = true
       packages:
         - old: ffmpeg-free
           new: ffmpeg
-        - old: mesa-vulkan
-          new: mesa-vulkan-freeworld
+        - old: mesa-vulkan-drivers
+          new: mesa-vulkan-drivers-freeworld
         - old: mesa-va-drivers
           new: mesa-va-drivers-freeworld
 
