@@ -86,6 +86,10 @@ modules:
         - old: mesa-va-drivers
           new: mesa-va-drivers-freeworld
 
+  - type: kargs
+    kargs:
+      - amdgpu.ppfeaturemask=0xfffd7fff
+
   - type: default-flatpaks
     configurations:
       - notify: true
