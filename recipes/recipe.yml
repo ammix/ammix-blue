@@ -51,7 +51,6 @@ modules:
         - pam_yubico
         - yubikey-manager
         - yubioath-desktop
-        - lact
         - fido2-tools
         - smartmontools
         - wl-clipboard
