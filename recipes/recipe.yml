@@ -50,7 +50,7 @@ modules:
         - pamu2fcfg
         - pam_yubico
         - yubikey-manager
-        - yubioath-desktop
+        - yubico-piv-tool
         - fido2-tools
         - smartmontools
         - wl-clipboard
