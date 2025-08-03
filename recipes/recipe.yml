@@ -41,6 +41,8 @@ modules:
         - heif-pixbuf-loader
         - libheif
         - mpv
+        - emacs
+        - emacs-gtk+x11
         - electrum
         - flatpak-spawn
         - alsa-firmware
@@ -79,6 +81,7 @@ modules:
         - gcc
         - make
         - elfutils-libelf-devel
+        - https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
     group-install:
       skip-unavailable: true
       packages:
@@ -98,11 +101,6 @@ modules:
           new: mesa-vulkan-drivers-freeworld
         - old: mesa-va-drivers
           new: mesa-va-drivers-freeworld
-
-  - type: rpm-ostree
-    install:
-      - https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
-      - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
 
   - type: kargs
     kargs:
