@@ -170,6 +170,7 @@ modules:
         - scx_loader.service
         - rpm-ostreed-automatic.timer
         - libvirtd.service
+        - lactd.service
 
   - type: initramfs
 
