@@ -75,6 +75,7 @@ modules:
         - akmods
         - kernel-devel
         - kernel-headers
+        - appimagelauncher
         - gcc
         - make
         - elfutils-libelf-devel
@@ -97,6 +98,10 @@ modules:
           new: mesa-vulkan-drivers-freeworld
         - old: mesa-va-drivers
           new: mesa-va-drivers-freeworld
+
+  - type: rpm-ostree
+    install:
+      - https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 
   - type: kargs
     kargs:
