@@ -158,6 +158,8 @@ modules:
         - Victor Mono
 
   - type: gschema-overrides
+    include:
+     - zz1-experimental.gschema.override
 
   - type: gnome-extensions
     install:
