@@ -157,6 +157,8 @@ modules:
         - Inter
         - Victor Mono
 
+  - type: gschema-overrides
+
   - type: gnome-extensions
     install:
       - Blur my Shell
