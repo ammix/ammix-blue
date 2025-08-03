@@ -40,7 +40,6 @@ modules:
         - docker-compose
         - heif-pixbuf-loader
         - libheif
-        - realtime-setup
         - mpv
         - electrum
         - flatpak-spawn
