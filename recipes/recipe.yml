@@ -41,6 +41,7 @@ modules:
         - heif-pixbuf-loader
         - libheif
         - mpv
+        - electrum
         - flatpak-spawn
         - alsa-firmware
         - ffmpegthumbnailer
