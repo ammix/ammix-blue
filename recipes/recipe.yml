@@ -172,6 +172,7 @@ modules:
         - scx_loader.service
         - libvirtd.service
         - lactd.service
+        - ammix-bootc-update.timer
       disabled:
         - grub-boot-success.timer
 
