@@ -147,6 +147,7 @@ modules:
           - page.tesk.Refine
           - com.yubico.yubioath
           - com.bitwarden.desktop
+          - it.mijorus.smile
 
 
   - type: fonts
