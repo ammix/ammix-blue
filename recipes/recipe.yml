@@ -166,6 +166,7 @@ modules:
     install:
       - Blur my Shell
       - Fullscreen Avoider
+      - Just Perfection
 
   - type: systemd
     system:
