@@ -176,6 +176,12 @@ modules:
       disabled:
         - grub-boot-success.timer
 
+  - type: os-release
+    properties:
+      ID: fedora
+      NAME: Ammix
+      PRETTY_NAME: Ammix Silverblue
+
   - type: initramfs
 
   - type: signing
