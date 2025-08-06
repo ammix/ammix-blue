@@ -169,7 +169,6 @@ modules:
       - Fullscreen Avoider
     uninstall:
       - Apps Menu
-      - Background Logo
       - Launch New Instance
       - Places Status Indicator
       - Window List
