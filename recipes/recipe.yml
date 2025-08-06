@@ -167,7 +167,12 @@ modules:
     install:
       - Blur my Shell
       - Fullscreen Avoider
-      - Just Perfection
+    uninstall:
+      - Apps Menu
+      - Background Logo
+      - Launch New Instance
+      - Places Status Indicator
+      - Window List
 
   - type: systemd
     system:
