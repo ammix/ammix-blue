@@ -108,6 +108,8 @@ modules:
 
   - type: kargs
     kargs:
+      - splash
+      - udev.log_priority=3
       - amdgpu.ppfeaturemask=0xfffd7fff
 
   - type: script
