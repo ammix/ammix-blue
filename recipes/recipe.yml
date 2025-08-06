@@ -36,6 +36,7 @@ modules:
         - vivaldi-stable
         - steam-devices
         - usbutils
+        - musescore
         - jq
         - podman-docker
         - podman
