@@ -108,8 +108,10 @@ modules:
 
   - type: kargs
     kargs:
+      - quiet
       - splash
       - udev.log_priority=3
+      - vconsole.keymap=de-us
       - amdgpu.ppfeaturemask=0xfffd7fff
 
   - type: script
