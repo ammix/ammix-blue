@@ -167,11 +167,6 @@ modules:
     install:
       - Blur my Shell
       - Fullscreen Avoider
-    uninstall:
-      - Apps Menu
-      - Launch New Instance
-      - Places Status Indicator
-      - Window List
 
   - type: systemd
     system:
