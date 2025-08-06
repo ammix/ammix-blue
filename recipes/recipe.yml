@@ -153,6 +153,7 @@ modules:
           - com.yubico.yubioath
           - com.bitwarden.desktop
           - it.mijorus.smile
+          - io.github.flattool.Warehouse
 
 
   - type: fonts
