@@ -175,6 +175,7 @@ modules:
     install:
       - Blur my Shell
       - Fullscreen Avoider
+      - RunCat
 
   - type: systemd
     system:
