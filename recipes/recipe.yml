@@ -156,7 +156,6 @@ modules:
           - com.bitwarden.desktop
           - com.tutanota.Tutanota
           - io.github.flattool.Warehouse
-          - org.musescore.MuseScore
 
 
   - type: fonts
