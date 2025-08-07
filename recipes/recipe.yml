@@ -38,6 +38,9 @@ modules:
         - usbutils
         - musescore
         - jq
+        - gnome-shell-extension-gsconnect
+        - nautilus-python
+        - nautilus-gsconnect
         - podman-docker
         - podman
         - pcsc-tools
