@@ -70,7 +70,6 @@ modules:
         - just
         - wcurl
         - gamemode
-        - gum
         - google-noto-fonts-all
         - liberation-fonts-all
         - fira-code-fonts
@@ -80,12 +79,12 @@ modules:
         - showtime
         - xz-utils
         - VirtualBox
+        - appimagelauncher
         - rpmfusion-nonfree-release-tainted
         - "*-firmware"
         - akmods
         - kernel-devel
         - kernel-headers
-        - appimagelauncher
         - gcc
         - make
         - elfutils-libelf-devel
@@ -155,7 +154,7 @@ modules:
           - page.tesk.Refine
           - com.yubico.yubioath
           - com.bitwarden.desktop
-          - it.mijorus.smile
+          - com.tutanota.Tutanota
           - io.github.flattool.Warehouse
 
 
