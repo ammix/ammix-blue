@@ -75,6 +75,8 @@ modules:
         - fira-code-fonts
         - wqy-zenhei-fonts
         - nautilus-python
+        - lm_sensors
+        - libgtop2-devel
         - papers
         - showtime
         - xz-utils
@@ -176,6 +178,7 @@ modules:
       - Blur my Shell
       - Fullscreen Avoider
       - RunCat
+      - Vitals
 
   - type: systemd
     system:
