@@ -164,10 +164,8 @@ modules:
     fonts:
       nerd-fonts:
         - FiraCode
-        - JetBrainsMono
         - NerdFontsSymbolsOnly
       google-fonts:
-        - Roboto
         - Inter
         - Victor Mono
 
