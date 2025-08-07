@@ -43,8 +43,8 @@ modules:
         - nautilus-gsconnect
         - podman-docker
         - podman
+        - podman-compose
         - pcsc-tools
-        - docker-compose
         - heif-pixbuf-loader
         - libheif
         - mpv
