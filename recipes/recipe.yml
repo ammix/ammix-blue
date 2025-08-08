@@ -176,8 +176,6 @@ modules:
     install:
       - Blur my Shell
       - Fullscreen Avoider
-      - RunCat
-      - Vitals
 
   - type: systemd
     system:
