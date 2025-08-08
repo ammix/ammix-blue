@@ -51,7 +51,10 @@ modules:
         - libheif
         - mpv
         - emacs
-        - emacs-gtk+x11
+        - emacs-common
+        - emacs-pgtk
+        - emacsclient
+        # - emacs-gtk+x11
         - electrum
         - flatpak-spawn
         - alsa-firmware
