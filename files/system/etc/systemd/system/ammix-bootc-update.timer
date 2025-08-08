@@ -2,7 +2,8 @@
 Description=Ammix Custom: Run bootc-update daily
 
 [Timer]
-OnCalendar=daily
+OnCalendar=08:00
+UTC=true
 RandomizedDelaySec=1h
 Persistent=true
 
