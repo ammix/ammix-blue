@@ -34,6 +34,7 @@ modules:
         - zstd
         - lact
         - vivaldi-stable
+        - firewall-config
         - steam-devices
         - usbutils
         - jq
