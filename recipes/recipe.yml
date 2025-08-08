@@ -34,6 +34,8 @@ modules:
         - zstd
         - lact
         - vivaldi-stable
+        - vulkan-tools
+        - libva-utils
         - firewall-config
         - steam-devices
         - usbutils
