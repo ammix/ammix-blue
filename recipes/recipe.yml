@@ -37,6 +37,7 @@ modules:
         - lact
         - terra-release
         - ghostty
+        - kitty
         - vivaldi-stable
         - vulkan-tools
         - libva-utils
