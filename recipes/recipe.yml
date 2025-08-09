@@ -22,26 +22,38 @@ modules:
       nonfree: rpmfusion
       files:
         - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
-        # - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
       copr:
         - bieszczaders/kernel-cachyos-addons
         - ilyaz/LACT
-        - scottames/ghostty
+        # - scottames/ghostty
     optfix:
       - vivaldi
     install:
       skip-unavailable: true
       packages:
+        - repo: rpmfusion
+          packages:
+            - steam-devices
+            - VirtualBox
+            - rpmfusion-nonfree-release-tainted
+            - akmods
+            - mpv
+        - repo: terra
+          packages:
+            - terra-release
+            - ghostty
+        - repo: vivaldi
+          packages:
+            - vivaldi-stable
         - neovim
+        - "*-firmware"
         - zstd
         - lact
-        - ghostty
         - kitty
-        - vivaldi-stable
         - vulkan-tools
         - libva-utils
         - firewall-config
-        - steam-devices
         - usbutils
         - jq
         - gnome-shell-extension-gsconnect
@@ -52,8 +64,6 @@ modules:
         - podman-compose
         - pcsc-tools
         - heif-pixbuf-loader
-        - libheif
-        - mpv
         - emacs
         - emacs-common
         - emacs-pgtk
@@ -82,17 +92,11 @@ modules:
         - liberation-fonts-all
         - fira-code-fonts
         - wqy-zenhei-fonts
-        - nautilus-python
         - lm_sensors
         - libgtop2-devel
         - papers
         - showtime
         - xz-utils
-        - VirtualBox
-        - appimagelauncher
-        - rpmfusion-nonfree-release-tainted
-        - "*-firmware"
-        - akmods
         - kernel-devel
         - kernel-headers
         - gcc
@@ -118,6 +122,8 @@ modules:
           new: mesa-vulkan-drivers-freeworld
         - old: mesa-va-drivers
           new: mesa-va-drivers-freeworld
+        - old: libheif
+          new: libheif-freeworld
 
   - type: kargs
     kargs:
