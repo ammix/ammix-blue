@@ -189,10 +189,12 @@ modules:
         - lactd.service
         - ammix-bootc-update.timer
         - flatpak-update.timer
-      masked::
+      masked:
         - grub-boot-success.timer
         - systemd-remount-fs.service
         - akmods-keygen@akmods-keygen.service
+        - rpm-ostreed-automatic.service
+        - rpm-ostreed-automatic.timer
     user:
       enabled:
         - ammix-emacs.service
