@@ -84,8 +84,12 @@ modules:
         - just
         - wcurl
         - gamemode
-        - google-noto-fonts-all
-        - liberation-fonts-all
+        - google-noto-sans-fonts
+        - google-noto-serif-fonts
+        - google-noto-emoji-fonts
+        - google-noto-sans-cjk-fonts
+        - google-noto-serif-cjk-fonts
+        - liberation-fonts
         - fira-code-fonts
         - wqy-zenhei-fonts
         - lm_sensors
