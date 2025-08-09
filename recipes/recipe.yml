@@ -35,17 +35,13 @@ modules:
         - repo: rpmfusion-nonfree
           packages:
             - steam-devices
-            - VirtualBox
-            - rpmfusion-nonfree-release-tainted
-            - akmods
-            - mpv
-        - repo: terra
-          packages:
-            - terra-release
-            - ghostty
-        - repo: vivaldi
-          packages:
-            - vivaldi-stable
+        - akmods
+        - mpv
+        - VirtualBox
+        - rpmfusion-nonfree-release-tainted
+        - terra-release
+        - ghostty
+        - vivaldi-stable
         - neovim
         - "*-firmware"
         - zstd
