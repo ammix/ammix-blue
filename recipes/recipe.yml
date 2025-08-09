@@ -189,8 +189,13 @@ modules:
         - lactd.service
         - ammix-bootc-update.timer
         - flatpak-update.timer
-      disabled:
+      masked::
         - grub-boot-success.timer
+        - systemd-remount-fs.service
+        - akmods-keygen@akmods-keygen.service
+    user:
+      enabled:
+        - ammix-emacs.service
 
   - type: os-release
     properties:
