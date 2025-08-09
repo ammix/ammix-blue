@@ -55,8 +55,6 @@ modules:
         - libheif
         - mpv
         - emacs
-        - emacs-common
-        - emacs-pgtk
         - emacsclient
         - electrum
         - flatpak-spawn
