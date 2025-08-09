@@ -32,7 +32,7 @@ modules:
     install:
       skip-unavailable: true
       packages:
-        - repo: rpmfusion
+        - repo: rpmfusion-nonfree
           packages:
             - steam-devices
             - VirtualBox
