@@ -22,6 +22,7 @@ modules:
       nonfree: rpmfusion
       files:
         - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
       copr:
         - bieszczaders/kernel-cachyos-addons
         - ilyaz/LACT
@@ -33,6 +34,7 @@ modules:
         - neovim
         - zstd
         - lact
+        - ghostty
         - vivaldi-stable
         - vulkan-tools
         - libva-utils
