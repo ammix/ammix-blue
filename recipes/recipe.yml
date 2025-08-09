@@ -98,6 +98,8 @@ modules:
         - showtime
         - xz-utils
         - kernel-devel
+        - libheif
+        - libheif-freeworld
         - kernel-headers
         - gcc
         - make
@@ -122,8 +124,6 @@ modules:
           new: mesa-vulkan-drivers-freeworld
         - old: mesa-va-drivers
           new: mesa-va-drivers-freeworld
-        - old: libheif
-          new: libheif-freeworld
 
   - type: kargs
     kargs:
