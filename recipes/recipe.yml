@@ -159,7 +159,6 @@ modules:
           - page.tesk.Refine
           - com.yubico.yubioath
           - com.bitwarden.desktop
-          - com.tutanota.Tutanota
           - io.github.flattool.Warehouse
 
 
