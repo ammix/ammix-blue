@@ -134,9 +134,8 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true
-        scope: system
       - scope: user
+        notify: true
         install:
           - io.gitlab.librewolf-community
           - app.zen_browser.zen
