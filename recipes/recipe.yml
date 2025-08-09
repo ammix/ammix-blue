@@ -35,7 +35,6 @@ modules:
         - neovim
         - zstd
         - lact
-        - terra-release
         - ghostty
         - kitty
         - vivaldi-stable
