@@ -109,7 +109,7 @@ modules:
         - libgtop2-devel
         - papers
         - showtime
-        - xz-utils
+        - xz
         - kernel-devel
         - kernel-headers
         - gcc
