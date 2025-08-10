@@ -43,8 +43,8 @@ modules:
   - type: dnf
     optfix:
       - vivaldi
+      - Filen
     install:
-      # skip-unavailable: true
       packages:
         - steam-devices
         - akmods
@@ -117,6 +117,7 @@ modules:
         - make
         - elfutils-libelf-devel
         - https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+        - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
     group-install:
       skip-unavailable: true
       packages:
@@ -180,6 +181,7 @@ modules:
           - page.tesk.Refine
           - com.yubico.yubioath
           - com.bitwarden.desktop
+          - com.tutanota.Tutanota
           - io.github.flattool.Warehouse
 
 
