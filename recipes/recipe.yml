@@ -33,7 +33,7 @@ modules:
     replace:
     - from-repo: fedora
       packages:
-        - old: penCL-ICD-Loader
+        - old: OpenCL-ICD-Loader
           new: ocl-icd
 
   - type: script
