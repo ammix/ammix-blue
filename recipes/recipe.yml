@@ -124,6 +124,10 @@ modules:
           new: mesa-vulkan-drivers-freeworld
         - old: mesa-va-drivers
           new: mesa-va-drivers-freeworld
+    - from-repo: fedora
+      packages:
+        - old: OpenCL-ICD-Loader
+          new: ocl-icd
 
   - type: kargs
     kargs:
