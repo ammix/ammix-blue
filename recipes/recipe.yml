@@ -30,6 +30,11 @@ modules:
       packages:
         - terra-release
         - rpmfusion-nonfree-release-tainted
+    replace:
+    - from-repo: fedora
+      packages:
+        - old: penCL-ICD-Loader
+          new: ocl-icd
 
   - type: script
     scripts:
