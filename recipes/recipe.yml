@@ -5,9 +5,8 @@ name: ammix-blue
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
-# the base image to build on top of (FROM) and the version tag to use
 base-image: quay.io/fedora-ostree-desktops/silverblue
-image-version: 42 # latest is also supported if you want new updates ASAP
+image-version: 42
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -15,33 +14,40 @@ modules:
   - type: files
     files:
       - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+        destination: /
+
 
   - type: dnf
     repos:
       nonfree: rpmfusion
-      files:
-        - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
       copr:
         - bieszczaders/kernel-cachyos-addons
         - ilyaz/LACT
-        # - scottames/ghostty
+      files:
+        - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - terra-release
+        - rpmfusion-nonfree-release-tainted
+
+  - type: script
+    scripts:
+      - repos.sh
+
+  - type: dnf
     optfix:
       - vivaldi
     install:
-      skip-unavailable: true
+      # skip-unavailable: true
       packages:
-        - repo: rpmfusion-nonfree
-          packages:
-            - steam-devices
+        - steam-devices
         - akmods
         - mpv
         - VirtualBox
-        - rpmfusion-nonfree-release-tainted
-        - terra-release
         - ghostty
         - vivaldi-stable
+        - qutebrowser
         - neovim
         - "*-firmware"
         - zstd
@@ -126,7 +132,7 @@ modules:
           new: mesa-va-drivers-freeworld
     - from-repo: fedora
       packages:
-        - old: OpenCL-ICD-Loader
+        - old: penCL-ICD-Loader
           new: ocl-icd
 
   - type: kargs
