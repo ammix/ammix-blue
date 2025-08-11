@@ -51,13 +51,13 @@ modules:
         - mpv
         - VirtualBox
         - ghostty
+        - kitty
         - vivaldi-stable
         - qutebrowser
         - neovim
         - "*-firmware"
         - zstd
         - lact
-        - kitty
         - vulkan-tools
         - libva-utils
         - firewall-config
@@ -107,8 +107,6 @@ modules:
         - wqy-zenhei-fonts
         - lm_sensors
         - libgtop2-devel
-        - papers
-        - showtime
         - xz
         - kernel-devel
         - kernel-headers
