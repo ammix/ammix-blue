@@ -97,7 +97,6 @@ modules:
         - libheif
         - libheif-freeworld
         - gamemode
-        - 7zip
         - google-noto-sans-fonts
         - google-noto-serif-fonts
         - google-noto-emoji-fonts
