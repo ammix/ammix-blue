@@ -70,14 +70,10 @@ modules:
         - podman
         - podman-compose
         - pcsc-tools
-        - heif-pixbuf-loader
-        - emacs
-        - emacs-common
         - emacs-pgtk
         - emacsclient
         - electrum
         - flatpak-spawn
-        - alsa-firmware
         - ffmpegthumbnailer
         - distrobox
         - wireguard-tools
@@ -94,6 +90,7 @@ modules:
         - stow
         - just
         - wcurl
+        - heif-pixbuf-loader
         - libheif
         - libheif-freeworld
         - gamemode
