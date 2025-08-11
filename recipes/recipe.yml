@@ -180,6 +180,9 @@ modules:
           - com.yubico.yubioath
           - com.bitwarden.desktop
           - com.tutanota.Tutanota
+          - org.gnome.Papers
+          - org.gnome.Showtime
+          - app.drey.Warp
           - io.github.flattool.Warehouse
 
 
