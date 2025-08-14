@@ -16,7 +16,6 @@ modules:
       - source: system
         destination: /
 
-
   - type: dnf
     repos:
       nonfree: rpmfusion
@@ -31,10 +30,10 @@ modules:
         - terra-release
         - rpmfusion-nonfree-release-tainted
     replace:
-    - from-repo: fedora
-      packages:
-        - old: OpenCL-ICD-Loader
-          new: ocl-icd
+      - from-repo: fedora
+        packages:
+          - old: OpenCL-ICD-Loader
+            new: ocl-icd
 
   - type: script
     scripts:
@@ -54,7 +53,7 @@ modules:
         - kitty
         - vivaldi-stable
         - qutebrowser
-        - neovim
+        - vim
         - "*-firmware"
         - zstd
         - lact
@@ -121,15 +120,15 @@ modules:
         - firefox
         - firefox-langpacks
     replace:
-    - from-repo: rpmfusion
-      allow-erasing: true
-      packages:
-        - old: ffmpeg-free
-          new: ffmpeg
-        - old: mesa-vulkan-drivers
-          new: mesa-vulkan-drivers-freeworld
-        - old: mesa-va-drivers
-          new: mesa-va-drivers-freeworld
+      - from-repo: rpmfusion
+        allow-erasing: true
+        packages:
+          - old: ffmpeg-free
+            new: ffmpeg
+          - old: mesa-vulkan-drivers
+            new: mesa-vulkan-drivers-freeworld
+          - old: mesa-va-drivers
+            new: mesa-va-drivers-freeworld
 
   - type: kargs
     kargs:
@@ -179,7 +178,6 @@ modules:
           - org.gnome.Showtime
           - app.drey.Warp
           - io.github.flattool.Warehouse
-
 
   - type: fonts
     fonts:
