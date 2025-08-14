@@ -61,7 +61,6 @@ modules:
         - libva-utils
         - firewall-config
         - usbutils
-        - jq
         - gnome-shell-extension-gsconnect
         - nautilus-python
         - nautilus-gsconnect
@@ -69,8 +68,6 @@ modules:
         - podman
         - podman-compose
         - pcsc-tools
-        - emacs-pgtk
-        - emacsclient
         - electrum
         - flatpak-spawn
         - ffmpegthumbnailer
