@@ -49,7 +49,7 @@ modules:
         - akmods
         - mpv
         - VirtualBox
-        - ghostty
+        - ghostty-nightly
         - kitty
         - vivaldi-stable
         - qutebrowser
