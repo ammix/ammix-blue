@@ -54,6 +54,8 @@ modules:
         - vivaldi-stable
         - qutebrowser
         - vim
+        - emacs-pgtk
+        - emacsclient
         - "*-firmware"
         - zstd
         - lact
@@ -206,6 +208,9 @@ modules:
         - akmods-keygen@akmods-keygen.service
         - rpm-ostreed-automatic.service
         - rpm-ostreed-automatic.timer
+    user:
+      enabled:
+        - ammix-emacs.service
 
   - type: os-release
     properties:
