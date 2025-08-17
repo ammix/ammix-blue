@@ -90,13 +90,17 @@ modules:
         - libheif
         - libheif-freeworld
         - gamemode
+        - bibata-cursor-theme
         - google-noto-sans-fonts
         - google-noto-serif-fonts
         - google-noto-emoji-fonts
         - google-noto-sans-cjk-fonts
         - google-noto-serif-cjk-fonts
         - liberation-fonts
+        - rsms-inter-fonts
         - fira-code-fonts
+        - firacode-nerd-fonts
+        - nerdfontssymbolsonly-nerd-fonts
         - wqy-zenhei-fonts
         - lm_sensors
         - libgtop2-devel
@@ -178,11 +182,7 @@ modules:
 
   - type: fonts
     fonts:
-      nerd-fonts:
-        - FiraCode
-        - NerdFontsSymbolsOnly
       google-fonts:
-        - Inter
         - Victor Mono
 
   - type: gschema-overrides
