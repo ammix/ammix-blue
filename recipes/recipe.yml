@@ -49,6 +49,7 @@ modules:
         - akmods
         - mpv
         - VirtualBox
+        - btrfs-assistant
         - ghostty-nightly
         - kitty
         - vivaldi-stable
