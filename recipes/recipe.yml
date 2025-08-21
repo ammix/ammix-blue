@@ -61,6 +61,7 @@ modules:
         - zstd
         - lact
         - vulkan-tools
+        - rustup
         - libva-utils
         - firewall-config
         - usbutils
