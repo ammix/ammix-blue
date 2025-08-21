@@ -57,6 +57,7 @@ modules:
         - vim
         - emacs-pgtk
         - emacsclient
+        - rustup
         - "*-firmware"
         - zstd
         - lact
