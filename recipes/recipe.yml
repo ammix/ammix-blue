@@ -64,12 +64,16 @@ modules:
         - libva-utils
         - firewall-config
         - usbutils
+        - usbmuxd
+        - ifuse
         - gnome-shell-extension-gsconnect
         - nautilus-python
         - nautilus-gsconnect
         - podman-docker
         - podman
         - podman-compose
+        - podman-machine
+        - podman-tui
         - pcsc-tools
         - electrum
         - flatpak-spawn
@@ -105,13 +109,17 @@ modules:
         - firacode-nerd-fonts
         - nerdfontssymbolsonly-nerd-fonts
         - wqy-zenhei-fonts
+        - sysprof
         - lm_sensors
         - libgtop2-devel
+        - wayland-devel
+        - egl-wayland-devel
+        - mesa-libgbm-devel
+        - libglvnd-devel
+        - libxkbcommon-devel
         - xz
         - kernel-devel
         - kernel-headers
-        - gcc
-        - make
         - elfutils-libelf-devel
         - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
     group-install:
@@ -119,6 +127,8 @@ modules:
       packages:
         - multimedia
         - virtualization
+        - development-tools
+        - c-development
     remove:
       packages:
         - firefox
