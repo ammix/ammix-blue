@@ -35,6 +35,11 @@ modules:
         packages:
           - old: OpenCL-ICD-Loader
             new: ocl-icd
+      - from-repo: terra-extras
+        allow-erasing: true
+        packages:
+          - old: ffmpeg-free
+            new: ffmpeg
 
   - type: script
     scripts:
@@ -46,6 +51,7 @@ modules:
       - Filen
     install:
       packages:
+        - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
         - steam-devices
         - akmods
         - mpv
@@ -96,7 +102,8 @@ modules:
         - wcurl
         - heif-pixbuf-loader
         - libheif
-        - libheif-freeworld
+        - ffmpeg-libs
+        - ffmpegthumbnailer
         - gamemode
         - bibata-cursor-theme
         - google-noto-sans-fonts
@@ -131,53 +138,19 @@ modules:
         - kernel-devel
         - kernel-headers
         - elfutils-libelf-devel
-        - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
-
-        - PackageKit-gstreamer-plugin
-        - alsa-ucm
-        - alsa-utils
-        - gstreamer1-plugin-dav1d
-        - gstreamer1-plugin-libav
-        - gstreamer1-plugin-openh264
-        - gstreamer1-plugins-bad-free
-        - gstreamer1-plugins-good
-        - gstreamer1-plugins-ugly-free
-        - libva-intel-media-driver
-        - pipewire-alsa
-        - pipewire-gstreamer
-        - pipewire-pulseaudio
-        - pipewire-utils
-        - wireplumber
-        - gstreamer1-plugins-bad-freeworld
-        - gstreamer1-plugins-ugly
-        - audacious-plugins-freeworld-aac
-        - gstreamer-plugins-espeak
-        - libavcodec-freeworld
-        - libheif-freeworld
-        - obs-studio-freeworld
-        - pipewire-codec-aptx
-        - qmmp-plugins-freeworld
-        - qt5-qtwebengine-freeworld
-        - vlc-plugins-freeworld
-        - xmms2-freeworld
-        - xpra-codecs-freeworld
     group-install:
       skip-unavailable: true
       packages:
         - multimedia
         - virtualization
         - development-tools
+        - development-libs
         - c-development
     remove:
       packages:
         - firefox
         - firefox-langpacks
-    replace:
-      - from-repo: terra-extras
-        allow-erasing: true
-        packages:
-          - old: ffmpeg-free
-            new: ffmpeg
+
 
   - type: kargs
     kargs:
