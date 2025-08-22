@@ -2,10 +2,10 @@
 
 echo "Setting repository configurations..."
 
-dnf5 config-manager setopt rpmfusion-free.priority=90
-dnf5 config-manager setopt rpmfusion-free-updates.priority=90
-dnf5 config-manager setopt rpmfusion-nonfree.priority=90
-dnf5 config-manager setopt rpmfusion-nonfree-updates.priority=90
-dnf5 config-manager setopt rpmfusion-nonfree-tainted.priority=90
+dnf5 -y config-manager setopt "*terra*".priority=1
+dnf5 -y config-manager setopt "terra-mesa".enabled=true
+dnf5 -y config-manager setopt "terra-nvidia".enabled=false
+dnf5 -y config-manager setopt "*rpmfusion*".priority=5 "*rpmfusion*".exclude="mesa-*"
+dnf5 -y config-manager setopt "*fedora*".exclude="mesa-*"
 
 echo "Successfully configured repositories."

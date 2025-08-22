@@ -28,6 +28,7 @@ modules:
     install:
       packages:
         - terra-release
+        - terra-release-extras
         - rpmfusion-nonfree-release-tainted
     replace:
       - from-repo: fedora
@@ -50,7 +51,7 @@ modules:
         - mpv
         - VirtualBox
         - btrfs-assistant
-        - ghostty-nightly
+        - ghostty
         - kitty
         - vivaldi-stable
         - qutebrowser
@@ -148,10 +149,6 @@ modules:
         packages:
           - old: ffmpeg-free
             new: ffmpeg
-          - old: mesa-vulkan-drivers
-            new: mesa-vulkan-drivers-freeworld
-          - old: mesa-va-drivers
-            new: mesa-va-drivers-freeworld
 
   - type: kargs
     kargs:
