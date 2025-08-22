@@ -219,6 +219,7 @@ modules:
         - lactd.service
         - ammix-bootc-update.timer
         - flatpak-update.timer
+        - podman.socket
       masked:
         - grub-boot-success.timer
         - systemd-remount-fs.service
