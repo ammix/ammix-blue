@@ -50,7 +50,6 @@ modules:
       - vivaldi
       - Filen
     install:
-      allowerasing: true
       packages:
         - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
         - steam-devices
@@ -103,8 +102,6 @@ modules:
         - wcurl
         - heif-pixbuf-loader
         - libheif
-        - ffmpeg-libs
-        - ffmpegthumbnailer
         - gamemode
         - bibata-cursor-theme
         - google-noto-sans-fonts
