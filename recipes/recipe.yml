@@ -102,6 +102,7 @@ modules:
         - wcurl
         - heif-pixbuf-loader
         - libheif
+        - libheif-freeworld
         - gamemode
         - bibata-cursor-theme
         - google-noto-sans-fonts
