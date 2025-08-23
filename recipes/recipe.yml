@@ -113,7 +113,6 @@ modules:
         - liberation-fonts
         - rsms-inter-fonts
         - fira-code-fonts
-        - firacode-nerd-fonts
         - nerdfontssymbolsonly-nerd-fonts
         - wqy-zenhei-fonts
         - sysprof
