@@ -35,11 +35,6 @@ modules:
         packages:
           - old: OpenCL-ICD-Loader
             new: ocl-icd
-      - from-repo: terra-extras
-        allow-erasing: true
-        packages:
-          - old: ffmpeg-free
-            new: ffmpeg
 
   - type: script
     scripts:
@@ -50,6 +45,7 @@ modules:
       - vivaldi
       - Filen
     install:
+      allow-erasing: true
       packages:
         - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
         - steam-devices
@@ -103,6 +99,14 @@ modules:
         - heif-pixbuf-loader
         - libheif
         - gamemode
+        - gstreamer1-vaapi
+        - gstreamer1-plugins-ugly
+        - gstreamer1-plugins-bad
+        - gstreamer1-plugin-libav
+        - gstreamer1-plugin-icamerasrc
+        - wireplumber
+        - pipewire-utils
+        - pipewire-gstreamer
         - bibata-cursor-theme
         - google-noto-sans-fonts
         - google-noto-serif-fonts
@@ -139,11 +143,16 @@ modules:
     group-install:
       skip-unavailable: true
       packages:
-        - multimedia
         - virtualization
         - development-tools
         - development-libs
         - c-development
+    replace:
+      - from-repo: terra-extras
+        allow-erasing: true
+        packages:
+          - old: ffmpeg-free
+            new: ffmpeg
     remove:
       packages:
         - firefox
