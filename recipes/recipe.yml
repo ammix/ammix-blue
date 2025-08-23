@@ -22,7 +22,6 @@ modules:
       copr:
         - bieszczaders/kernel-cachyos-addons
         - ilyaz/LACT
-        - che/nerd-fonts
       files:
         - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
@@ -58,7 +57,7 @@ modules:
         - mpv
         - VirtualBox
         - btrfs-assistant
-        - ghostty
+        - ghostty-nightly
         - kitty
         - vivaldi-stable
         - qutebrowser
@@ -113,7 +112,8 @@ modules:
         - liberation-fonts
         - rsms-inter-fonts
         - fira-code-fonts
-        - nerd-fonts
+        - firacode-nerd-fonts
+        - nerdfontssymbolsonly-nerd-fonts
         - wqy-zenhei-fonts
         - sysprof
         - lm_sensors
@@ -201,9 +201,6 @@ modules:
 
   - type: fonts
     fonts:
-      nerd-fonts:
-        - FiraCode
-        - NerdFontsSymbolsOnly
       google-fonts:
         - Victor Mono
 
