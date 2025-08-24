@@ -83,7 +83,7 @@ modules:
         - wireguard-tools
         - openssl
         - pam-u2f
-        - pmu2fcfg
+        - pamu2fcfg
         - pam_yubico
         - yubikey-manager
         - yubico-piv-tool
