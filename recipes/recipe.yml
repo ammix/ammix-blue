@@ -1,13 +1,10 @@
----
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: ammix-blue
 # description will be included in the image's metadata
 description: This is my personal OS image.
-
 base-image: quay.io/fedora-ostree-desktops/silverblue
 image-version: 42
-
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
@@ -15,7 +12,6 @@ modules:
     files:
       - source: system
         destination: /
-
   - type: dnf
     repos:
       nonfree: rpmfusion
@@ -40,11 +36,9 @@ modules:
         packages:
           - old: ffmpeg-free
             new: ffmpeg
-
   - type: script
     scripts:
       - repos.sh
-
   - type: dnf
     optfix:
       - vivaldi
@@ -89,7 +83,7 @@ modules:
         - wireguard-tools
         - openssl
         - pam-u2f
-        - pamu2fcfg
+        - pmu2fcfg
         - pam_yubico
         - yubikey-manager
         - yubico-piv-tool
@@ -148,8 +142,6 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
-
-
   - type: kargs
     kargs:
       - quiet
@@ -157,13 +149,11 @@ modules:
       - udev.log_priority=3
       - vconsole.keymap=de-us
       - amdgpu.ppfeaturemask=0xfffd7fff
-
   - type: script
     snippets:
       - "plymouth-set-default-theme catppuccin-mocha"
     scripts:
       - akmods.sh
-
   - type: default-flatpaks
     configurations:
       - scope: user
@@ -198,19 +188,15 @@ modules:
           - org.gnome.Showtime
           - app.drey.Warp
           - io.github.flattool.Warehouse
-
   - type: fonts
     fonts:
       google-fonts:
         - Victor Mono
-
   - type: gschema-overrides
-
   - type: gnome-extensions
     install:
       - Blur my Shell
       - Fullscreen Avoider
-
   - type: systemd
     system:
       enabled:
@@ -229,13 +215,10 @@ modules:
     user:
       enabled:
         - ammix-emacs.service
-
   - type: os-release
     properties:
       ID: fedora
       NAME: Ammix
       PRETTY_NAME: Ammix Silverblue
-
   - type: initramfs
-
   - type: signing
