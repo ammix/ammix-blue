@@ -12,6 +12,7 @@ modules:
     files:
       - source: system
         destination: /
+
   - type: dnf
     repos:
       nonfree: rpmfusion
@@ -36,9 +37,11 @@ modules:
         packages:
           - old: ffmpeg-free
             new: ffmpeg
+
   - type: script
     scripts:
       - repos.sh
+
   - type: dnf
     optfix:
       - vivaldi
@@ -142,6 +145,7 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+
   - type: kargs
     kargs:
       - quiet
@@ -149,11 +153,13 @@ modules:
       - udev.log_priority=3
       - vconsole.keymap=de-us
       - amdgpu.ppfeaturemask=0xfffd7fff
+
   - type: script
     snippets:
       - "plymouth-set-default-theme catppuccin-mocha"
     scripts:
       - akmods.sh
+
   - type: default-flatpaks
     configurations:
       - scope: user
@@ -188,6 +194,7 @@ modules:
           - org.gnome.Showtime
           - app.drey.Warp
           - io.github.flattool.Warehouse
+
   - type: fonts
     fonts:
       google-fonts:
@@ -197,6 +204,7 @@ modules:
     install:
       - Blur my Shell
       - Fullscreen Avoider
+
   - type: systemd
     system:
       enabled:
@@ -215,10 +223,13 @@ modules:
     user:
       enabled:
         - ammix-emacs.service
+
   - type: os-release
     properties:
       ID: fedora
       NAME: Ammix
       PRETTY_NAME: Ammix Silverblue
+
   - type: initramfs
+
   - type: signing
