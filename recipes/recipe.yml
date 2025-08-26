@@ -144,6 +144,8 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+        - gnome-software
+
   - type: kargs
 
     kargs:
