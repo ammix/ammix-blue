@@ -147,7 +147,6 @@ modules:
         - gnome-software
 
   - type: kargs
-
     kargs:
       - quiet
       - splash
