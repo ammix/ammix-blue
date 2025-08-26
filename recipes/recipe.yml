@@ -76,7 +76,6 @@ modules:
         - podman-machine
         - podman-tui
         - pcsc-tools
-        - electrum
         - flatpak-spawn
         - ffmpegthumbnailer
         - distrobox
