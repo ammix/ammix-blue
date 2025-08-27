@@ -65,7 +65,6 @@ modules:
         - vim
         - "*-firmware"
         - zstd
-        - rustup
         - lact
         - vulkan-tools
         - libva-utils
