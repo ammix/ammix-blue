@@ -62,6 +62,7 @@ modules:
         - vivaldi-stable
         - qutebrowser
         - vim
+        - luarocks
         - "*-firmware"
         - zstd
         - lact
