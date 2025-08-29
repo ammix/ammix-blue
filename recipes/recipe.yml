@@ -17,9 +17,8 @@ modules:
   - type: dnf
     repos:
       nonfree: rpmfusion
-      copr:
-        - bieszczaders/kernel-cachyos-addons
-        - ilyaz/LACT
+      # copr:
+      #   - ilyaz/LACT
       files:
         - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
