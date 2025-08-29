@@ -21,7 +21,6 @@ modules:
       #   - ilyaz/LACT
       files:
         - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
-        - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
       packages:
@@ -47,7 +46,6 @@ modules:
     optfix:
       - vivaldi
       - Filen
-      - brave.com
     install:
       packages:
         - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
@@ -58,7 +56,6 @@ modules:
         - btrfs-assistant
         - ghostty
         - kitty
-        - brave-browser
         - vivaldi-stable
         - qutebrowser
         - vim
