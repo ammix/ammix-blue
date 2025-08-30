@@ -17,8 +17,8 @@ modules:
   - type: dnf
     repos:
       nonfree: rpmfusion
-      # copr:
-      #   - ilyaz/LACT
+      copr:
+        - ilyaz/LACT
       files:
         - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
