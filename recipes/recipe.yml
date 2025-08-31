@@ -65,7 +65,6 @@ modules:
         - lact
         - vulkan-tools
         - libva-utils
-        - ffmpeg-libs
         - firewall-config
         - usbutils
         - usbmuxd
