@@ -32,7 +32,7 @@ modules:
         packages:
           - old: OpenCL-ICD-Loader
             new: ocl-icd
-      - from-repo: terra-extras
+      - from-repo: rpmfusion
         allow-erasing: true
         packages:
           - old: ffmpeg-free
