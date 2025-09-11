@@ -32,7 +32,7 @@ modules:
         packages:
           - old: OpenCL-ICD-Loader
             new: ocl-icd
-      - from-repo: terra-extras
+      - from-repo: rpmfusion
         allow-erasing: true
         packages:
           - old: ffmpeg-free
@@ -47,6 +47,7 @@ modules:
       - vivaldi
       - Filen
     install:
+      allow-erasing: true
       packages:
         - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
         - steam-devices
@@ -54,7 +55,6 @@ modules:
         - akmods
         - mpv
         - VirtualBox
-        - btrfs-assistant
         - ghostty
         - kitty
         - vivaldi-stable
@@ -64,6 +64,7 @@ modules:
         - "*-firmware"
         - zstd
         - lact
+        - ffmpeg-libs
         - vulkan-tools
         - libva-utils
         - firewall-config
