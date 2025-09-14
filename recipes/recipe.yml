@@ -181,8 +181,8 @@ modules:
           - com.yubico.yubioath
           - com.bitwarden.desktop
           - com.tutanota.Tutanota
-          - org.gnome.Papers
-          - org.gnome.Showtime
+          - io.github.htkhiem.Euphonica
+          - com.github.Matoking.protontricks
           - app.drey.Warp
 
   - type: fonts
