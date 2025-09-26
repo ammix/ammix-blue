@@ -74,6 +74,14 @@ modules:
         - gnome-shell-extension-gsconnect
         - nautilus-python
         - nautilus-gsconnect
+        - bcc
+        - bpftop
+        - bpftrace
+        - nicstat
+        - numactl
+        - restic
+        - rclone
+        - tiptop
         - podman-docker
         - podman
         - podman-compose
