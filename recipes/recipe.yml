@@ -16,6 +16,8 @@ modules:
 
   - type: dnf
     repos:
+      keys:
+        - https://repo.cider.sh/RPM-GPG-KEY
       nonfree: rpmfusion
       copr:
         - ilyaz/LACT
@@ -50,6 +52,7 @@ modules:
       allow-erasing: true
       packages:
         - https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
+        - Cider
         - steam-devices
         - fish
         - akmods
