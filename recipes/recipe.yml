@@ -108,7 +108,6 @@ modules:
         - scx-scheds
         - stow
         - just
-        - wcurl
         - heif-pixbuf-loader
         - libheif
         - libheif-freeworld
