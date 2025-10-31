@@ -65,7 +65,6 @@ modules:
         - sudo-rs
         - vim
         - luarocks
-        - "*-firmware"
         - zstd
         - lact
         - ffmpeg-libs
@@ -95,6 +94,17 @@ modules:
         - flatpak-spawn
         - ffmpegthumbnailer
         - distrobox
+        - alsa-firmware
+        - realtek-firmware
+        - broadcom-bt-firmware
+        - intel-audio-firmware
+        - amd-ucode-firmware
+        - amd-gpu-firmware
+        - pipewire-plugin-libcamera
+        - adw-gtk3-theme
+        - gvfs-nfs
+        - ibus-unikey
+        - ibus-mozc
         - wireguard-tools
         - openssl
         - pam-u2f
