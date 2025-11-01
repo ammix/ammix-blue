@@ -45,9 +45,9 @@ modules:
       - repos.sh
 
   - type: dnf
-    optfix:
-      - vivaldi
-      - Filen
+    # optfix:
+    #   - vivaldi
+    #   - Filen
     install:
       allow-erasing: true
       packages:
