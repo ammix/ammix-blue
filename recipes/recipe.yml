@@ -5,7 +5,7 @@ name: ammix-blue
 # description will be included in the image's metadata
 description: This is my personal OS image.
 base-image: quay.io/fedora-ostree-desktops/silverblue
-image-version: 42
+image-version: 43
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
@@ -45,9 +45,6 @@ modules:
       - repos.sh
 
   - type: dnf
-    # optfix:
-    #   - vivaldi
-    #   - Filen
     install:
       allow-erasing: true
       packages:
